@@ -1,6 +1,7 @@
 # Gradle
 .gradle/
 build/
+gradle/
 
 # Eclipse
 .project
@@ -37,11 +38,3 @@ nb-configuration.xml
 
 # Plugin directory
 /.quarkus/cli/plugins/
-
-# Gradle Wrapper
-/gradle
-# Ignore Gradle project-specific cache directory
-.gradle
-
-# Ignore Gradle build output directory
-build

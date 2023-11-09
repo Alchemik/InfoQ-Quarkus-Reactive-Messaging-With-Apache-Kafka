@@ -14,14 +14,14 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
+    implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
     implementation("io.quarkus:quarkus-smallrye-reactive-messaging-kafka")
-    implementation("io.quarkus:quarkus-jackson")
     implementation("io.quarkus:quarkus-arc")
     testImplementation("io.quarkus:quarkus-junit5")
 }
 
 group = "org.acme"
-version = "1.0.0-SNAPSHOT"
+version = "1.0-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
